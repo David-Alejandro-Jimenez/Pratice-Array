@@ -9,5 +9,8 @@ func TestArrays(t *testing.T) {
 	Result := ArraysPrueba(numbers1, numbers2)
 	for i := range numbers1 {
 		Result = append(Result, numbers1[i], numbers2[i])
-	}
-}
+		if Result == nil {
+			t.Errorf("Practica incorrecta")
+		}
+	} 
+} 
