@@ -5,15 +5,15 @@ import (
 )
 
 //Creamos en una funcion los arrays y su tipo de dato
-func ArraysPrueba(Array1 []int, Array2 []int) (Resultado []int,) {
+func ArraysPrueba(array1 []int, array2 []int) (resultado []int,) {
 	//Creamos un ciclo for para que alterne los 2 arrays
-	for i := range Array1 {
-		Resultado = append(Resultado, Array1[i], Array2[i])
+	for i := range array1 {
+		resultado = append(resultado, array1[i], array2[i])
 	}
 	//Imprimimos El Resultado.
-	fmt.Println(Resultado[0:9])
+	fmt.Println(resultado[0:9])
 	//retornamos el resultado del ciclo for
-	return Resultado 
+	return resultado 
 	
 }
 
