@@ -5,7 +5,7 @@ import (
 )
 
 //Creamos en una funcion los arrays y su tipo de dato
-func ArraysPrueba(array1 []int, array2 []int) (resultado []int,) {
+func ArraysPrueba(array1, array2 []int) (resultado []int) {
 	//Creamos un ciclo for para que alterne los 2 arrays
 	for i := range array1 {
 		resultado = append(resultado, array1[i], array2[i])
